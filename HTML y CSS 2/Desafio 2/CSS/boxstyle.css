@@ -1,0 +1,29 @@
+div.bigbox {
+	width: 230px;
+	height: 230px;	
+	position: absolute;}
+div#box1 {
+	top: 0;
+	left: 0;
+	background-color: #ee3e64;
+	z-index: +3;}
+div#box2 {
+	right: 0;
+	top: 0;
+	background-color: #44accf;
+	z-index: +1;}
+div#box3 {
+	left: 0;
+	bottom: 0;
+	background-color: #b7d84b;
+	z-index: +2;}
+div#box4 {
+	right: 0;
+	bottom: 0;
+	background-color: #ebde52;
+	z-index: +4;}
+div.smallbox{
+	width: 40px;
+	height: 40px;
+	background-color: #f95b34;
+	margin: 95px;}

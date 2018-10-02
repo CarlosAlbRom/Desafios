@@ -1,0 +1,155 @@
+body {
+	margin: 0;
+	margin-left: 10%;
+	margin-right: 1.5%; 
+	padding: 0;
+	background-image: url(http://icanbecreative.com/resources/files/articles/40-high-resolution-wallpapers-for-minimalist-lovers/sources/everest-minimalist-wallpaper-blue.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	position: relative;
+}
+
+h1{
+	float: left;
+	margin-left: 5%;
+	font-size: 40px;
+	font-family: Merriweather;
+	color: #08298A;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 0;
+	font-family: Dosis;
+
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 16px;
+	text-align: justify;
+	opacity: 1;
+	font-family: Dosis;
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 16px;
+	text-align: justify;
+	opacity: 1;
+	font-family: Dosis;
+}
+
+
+a {
+	text-decoration: none;
+	color: #08298A;
+	margin: 0;
+	padding: 2px 10px;
+	margin-left: 5px;
+}
+
+nav {
+
+	margin-right: 0%;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	float: right;
+	margin: 0;
+	border-color: black;
+}
+
+p {
+	margin: 0;
+}
+
+.Banner {
+	height: 90px;
+	margin-right: 10%; 
+	width: 100%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.Section {
+	display: block;
+	height: 325px;
+	width: 70%;
+	background-color: rgba(223,251,245,0.9);
+	float: left;
+	margin-right: 2%;
+	box-shadow: 3px 3px 5px 3px #0C6856;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.Section2 {
+	display: block;
+	height: 378px;
+	width: 70%;
+	background-color: rgba(223,251,245,0.9);
+	float: left;
+	margin-right: 2%;
+	box-shadow: 3px 3px 5px 3px #0C6856;
+	padding-left: 2%;
+	padding-right: 2%; 
+}
+
+.Section3 {
+	display: block;
+	height: 485px;
+	width: 70%;
+	background-color: rgba(223,251,245,0.9);
+	float: left;
+	margin-right: 2%;
+	box-shadow: 3px 3px 5px 3px #0C6856;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+
+#AJAXLogo {
+
+	width: 15%;
+	height: 90%;
+	float: left;
+	margin-top: 1%;
+	margin-left: 10%;
+}
+
+#BGImg {
+	display: inline-block;
+	position: absolute;
+	z-index: -5;
+	height: 500px;
+	width: 500px;
+	top: 50%;
+	left: 55%;
+}
+
+#BGImg2 {
+	display: inline-block;
+	position: absolute;
+	z-index: -5;
+	height: 450px;
+	width: 450px;
+	top: 100%;
+	left: 60%;
+}
+
+#BGImg3 {
+	display: inline-block;
+	position: absolute;
+	z-index: -5;
+	height: 450px;
+	width: 450px;
+	top: 120%;
+	left: 60%;
+	margin-bottom: 8%; 	
+}
+

@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+nav {
+	position: absolute;
+	width: 80%;
+	top: 189px;
+	left: 10%;
+	right: 10%;
+	z-index: 1;
+}
+
+header {
+	width: 100%;
+	height: 38px;
+	background-color: #263238; 
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+li a {
+	color: white;
+	text-decoration: none;
+	font-family: Raleway;
+	font-size: 16px;
+	position: relative;
+	top: 15.5px;
+}
+
+li.pink_side {
+	position: relative;
+	left: 2%;
+	margin-right: 3%;
+}
+
+p.header_text {
+	font-family: Raleway;
+	color: white;
+	text-align: center;
+	font-size: 17px;
+	position: relative;
+	top: 7.5px;
+}
+
+p#contact_info {
+	font-family: Raleway;
+	color: black;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+div.banner_brown {
+	background-color: #8E5C51;
+	height: 50px;
+	width: 6.5%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	float: left;
+	text-align: center;
+}
+div.banner_pink {
+	background-color: #F5769F;
+	height: 50px;
+	width: 93.5%;
+	float: right;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+div#contact_box {
+	position: absolute;
+	right: 11%;
+	top: 78px;
+	width: 180px;
+}
+
+img#logo {
+	margin-left: 11%;
+	width: 10.2%;
+	height: 118px;
+	position: relative;
+	top: 16px;
+}
+
+img.banner {
+	width: 100%;
+	height: 441px;
+	position: absolute;
+	top: 214px;
+}
+
+img.icon {
+	width: 51px;
+	float: right;
+	margin-left: 4px;
+}
+

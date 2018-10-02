@@ -1,0 +1,139 @@
+Clase accesorio
+
+	Definir nombre Como Caracter
+	Definir precio Como Real 
+	Definir marca Como Caracter
+	Definir inventorio Como Entero
+	Definir disponibilidad Como Logico 
+
+	Metodo definir_producto()
+
+		Mostrar "Ingresar Nombre del Accesorio:"
+		Leer nombre
+		Mostrar "Ingresar Precio del Accesorio:"
+		Leer precio
+		Mostrar ""
+		inventorio = inventario - 1
+
+	Fin Metodo
+
+Fin Clase
+
+Clase cliente 
+	
+	Definir nombre Como Caracter
+	Definir apellido Como Caracter
+	Definir cedula Como Caracter
+	Definir rif Como Caracter
+	Definir telefono Como Caracter
+	Definir direccion Como Caracter
+
+	Metodo registrar_cliente()
+
+		Mostrar "Ingresar Nombre del Comprador:"
+		Leer nombre
+		Mostrar "Ingresar Apellido del Comprador"
+		Leer apellido
+		Mostrar "Ingresar Cedula del Comprador:"
+		Leer cedula
+		Mostrar "Ingresar Rif del Cliente:"
+		Leer rif
+		Mostrar "Ingresar Telefono del Usuario:"
+		Leer telefono
+		Mostrar "Ingresar Direccion del Usuario:"
+		Lerr direccion
+
+	Fin Metodo
+
+Fin Clase
+
+Clase fecha
+
+	Definir dia Como Entero
+	Definir mes Como Entero
+	Definir año Como Entero
+
+	Metodo registrar_fecha()
+		Mostrar "Ingresar Dia Actual:"
+		Leer dia
+		Mostrar "Ingresar Mes Actual:"
+		Leer mes
+		Mostrar "Ingresar Año Actual:"
+		Leer año
+	Fin Metodo
+
+Fin Clase
+
+Clase hora
+
+	Definir hora_reloj Como Entero
+	Definir minuto Como Entero
+	Definir segundo Como Entero
+
+	Metodo registrar_hora()
+
+		Mostrar "Ingresar Hora Actual:"
+		Leer hora_reloj
+		Mostrar "Ingresar Minuto Actual:"
+		Leer minuto
+		Mostrar "Ingresar Segundo Actual:"
+		Leer segundo
+
+	Fin Metodo
+
+Fin Clase	
+
+Clase factura
+
+	Definir fecha_compra Como fecha
+	Definir hora_compra Como hora
+	Definir monto Como Real
+	Definir iva Como Real
+	Definir monto_final Como Real
+	Definir codigo_factura Entero
+	Definir producto Como accesorio
+	Definir comprador Como cliente
+
+	Metodo registrar_factura()
+
+		comprador.registrar_cliente()
+		producto.definir_producto()
+		fecha_compra.registrar_fecha()
+		hora_compra.registrar_hora()
+		monto = producto.precio
+		codigo_factura = codigo_factura + 1
+
+	Fin Metodo
+
+	Metodo salida_factura()
+
+		Mostrar "Nombre del Comprador: " comprador.nombre " " comprador.apellido
+		Mostrar ""
+		Mostrar "Producto: " producto.nombre
+		Mostrar ""
+		Mostrar "Precio Base: " monto " Bss."
+		Mostrar "I.V.A.: " iva " Bss."
+		Mostrar "Precio Final: " monto_final " Bss."
+		Mostrar ""
+		Mostrar "Fecha: " fecha_compra.dia + "/" + fecha_compra.mes + "/" + fecha_compra.año
+		Mostrar "Hora: " hora_compra.hora_reloj + ":" + hora_compra.minuto + ":" + hora_compra.segundo
+		Mostrar ""
+		Mostrar "Codigo de Compra: " codigo_factura
+
+	Fin Metodo
+
+Fin Clase
+
+Algoritmo
+
+	Definir recibo_compra Como factura
+	recibo_compra = Nuevo factura()
+
+	recibo_compra.registrar_factura()
+
+	recibo_compra.iva = recibo_compra.monto + recibo_compra.monto*0.16
+	recibo_compra.monto_final = recibo_compra.iva + recibo_compra.monto
+
+	recibo_compra.salida_factura()
+
+Fin Algoritmo

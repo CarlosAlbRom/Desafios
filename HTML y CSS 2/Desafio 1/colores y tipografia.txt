@@ -1,0 +1,9 @@
+Colores principales:
+
+- Rosado: #F5769F
+- Marrón: #8E5C51
+- Negro: #263238
+
+Tipografía:
+
+- Raleway (fuente disponible en Google Fonts)
