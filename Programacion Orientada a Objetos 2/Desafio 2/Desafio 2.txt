@@ -1,0 +1,194 @@
+// Desafio N°2: Sueldo de Empleados de una Tienda de Zapatos
+//Definicion de Clases
+
+Clase empleado
+
+	Privado Definir nombre Como Caracter
+	Definir nuevo_nombre Como Caracter
+	Privado Definir cedula Como Caracter
+	Definir nuevo_cedula Como Caracter
+	Privado Definir posicion Como Caracter
+	Definir nuevo_posicion Como Caracter
+	Privado Definir sueldo_base Como Real
+	Definir nuevo_sueldo_base Como Real
+	Privado Definir ventas Como Real
+	Definir nuevo_ventas Como Real
+	Privado Definir bono_ventas Como Real
+	Definir nuevo_bono_ventas Como Real
+	Privado Definir horas_extra Como Entero
+	Definir nuevo_horas_extra Como Entero
+	Privado Definir bono_extra Como Real
+	Definir nuevo_bono_extra Como Real
+	Privado Definir salario_neto Como Real
+	Definir nuevo_salario_neto Como Real
+
+	Metodo setnombre(nuevo_nombre) 
+		nombre = nuevo_nombre
+	Fin Metodo
+	Metodo getnombre() Como Caracter
+		Retornar nombre
+	Fin Metodo
+
+	Metodo setcedula(nuevo_cedula) 
+		cedula = nuevo_cedula
+	Fin Metodo
+	Metodo getcedula() Como Caracter
+		Retornar cedula
+	Fin Metodo
+
+	Metodo setposicion(nuevo_posicion) 
+		posicion = nuevo_posicion
+	Fin Metodo
+	Metodo getposicion() Como Caracter
+		Retornar posicion
+	Fin Metodo
+
+	Metodo setventas(nuevo_ventas) 
+		ventas = nuevo_ventas
+	Fin Metodo
+	Metodo getventas() Como Real
+		Retornar ventas
+	Fin Metodo
+
+	Metodo sethorasextra(nuevo_horas_extra) 
+		horas_extra = nuevo_horas_extra
+	Fin Metodo
+	Metodo gethorasextra() Como Entero
+		Retornar horas_extra
+	Fin Metodo
+
+	Metodo setsueldobase(nuevo_sueldo_base) 
+		sueldo_base = nuevo_sueldo_base
+	Fin Metodo
+	Metodo getsueldobase() Como Real
+		Retornar sueldo_base
+	Fin Metodo
+
+	Metodo setbonoventas(nuevo_bono_ventas) 
+		bono_extra = nuevo_bono_ventas
+	Fin Metodo
+	Metodo getbonoventas() Como Real
+		Retornar bono_extra
+	Fin Metodo
+
+	Metodo setbonoextra(nuevo_bono_extra) 
+		bono_extra = nuevo_bono_extra
+	Fin Metodo
+	Metodo getbonoextra() Como Real
+		Retornar bono_extra
+	Fin Metodo
+
+	Metodo setsueldoneto(nuevo_sueldo_neto) 
+		sueldo_neto = nuevo_sueldo_neto
+	Fin Metodo
+	Metodo getsueldoneto() Como Real
+		Retornar sueldo_neto
+	Fin Metodo
+
+	Metodo calculos (nuevo_sueldo_base, horas_extra, ventas)
+		sueldo_base = nuevo_sueldo_base
+		bono_extra = horas_extra * sueldo_base * 0.0001
+		bono_ventas = ventas * 0.15
+		sueldo_neto = sueldo_base + bono_ventas + bono_extra
+	Fin Metodo
+
+Fin Clase
+
+//Cuerpo Principal
+
+Algoritmo calculo_sueldos
+
+	//Instanciacion de Objetos
+
+	Definir empleado1, empleado2 Como empleado
+	empleado1 = Nuevo empleado
+	empleado2 = Nuevo empleado
+
+	//Entrada de Datos
+
+	Mostrar "Ingrese Datos del Empleado"
+	Mostrar ""
+	Mostrar "Ingrese Nombre del Empleado:" Sin Saltar
+	Leer empleado1.nuevo_nombre
+	empleado1.setnombre(empleado1.nuevo_nombre)
+	Mostrar "Ingrese Numero de Cudula del Empleado:" Sin Saltar
+	Leer empleado1.nuevo_cedula
+	empleado1.setcedula(empleado1.nuevo_cedula)
+	Mostrar "Ingrese Posicion del Empleado:" Sin Saltar
+	Leer empleado1.nuevo_posicion
+	empleado1.setposicion(empleado1.nuevo_posicion)
+	Mostrar "Ingrese el Total de Ventas del Empleado:" Sin Saltar
+	Leer empleado1.nuevo_ventas
+	empleado1.setventas(empleado1.nuevo_ventas)
+	Mostrar "Ingrese la Cantidad de Horas Extra del Empleado:" Sin Saltar
+	Leer empleado1.nuevo_horas_extra
+	empleado1.sethorasextra(empleado1.nuevo_horas_extra)
+	Mostrar ""
+	Mostrar "--------------------------------------------------------------------"
+	Mostrar ""
+	
+	Mostrar "Ingrese Datos del Empleado"
+	Mostrar ""
+	Mostrar "Ingrese Nombre del Empleado:" Sin Saltar
+	Leer empleado2.nuevo_nombre
+	empleado2.setnombre(empleado2.nuevo_nombre)
+	Mostrar "Ingrese Numero de Cudula del Empleado:" Sin Saltar
+	Leer empleado2.nuevo_cedula
+	empleado2.setcedula(empleado2.nuevo_cedula)
+	Mostrar "Ingrese Posicion del Empleado:" Sin Saltar
+	Leer empleado2.nuevo_posicion
+	empleado2.setposicion(empleado2.nuevo_posicion)
+	Mostrar "Ingrese el Total de Ventas del Empleado:" Sin Saltar
+	Leer empleado2.nuevo_ventas
+	empleado2.setventas(empleado2.nuevo_ventas)
+	Mostrar "Ingrese la Cantidad de Horas Extra del Empleado:" Sin Saltar
+	Leer empleado2.nuevo_horas_extra
+	empleado2.sethorasextra(empleado2.nuevo_horas_extra)
+	Mostrar ""
+	Mostrar "--------------------------------------------------------------------"
+	Mostrar ""
+
+	//Calculo de los Procesos
+
+	empleado1.calculos(3000000, empleado1.nuevo_horas_extra, empleado1.nuevo_ventas)
+	empleado2.calculos(3000000, empleado2.nuevo_horas_extra, empleado2.nuevo_ventas)
+
+	//Salido de Datos
+
+	Mostrar "Datos del Empleado:"
+	Mostrar ""
+	Mostrar "Nombre del Empleado: " empleado1.getnombre()
+	Mostrar "Cedula del Empleado: " empleado1.getcedula()
+	Mostrar "Posicion del Empleado: " empleado1.getposicion()
+	Mostrar ""
+	Mostrar "Sueldo Base: " empleado1.getsueldobase() "§"
+	Mostrar "Total de Ventas: " empleado1.getventas() "§"
+	Mostrar "Horas Extras Trabajadas: " empleado1.gethorasextra()
+	Mostrar ""
+	Mostrar "Bono por Ventas: " empleado1.getbonoventas() "§"
+	Mostrar "Bono por Horas Extra: " empleado1.getbonoextra() "§"
+	Mostrar ""
+	Mostrar "Sueldo Neto: " empleado1.getsueldoneto() "§"
+	Mostrar ""
+	Mostrar "--------------------------------------------------------------------"
+	Mostrar ""
+
+	Mostrar "Datos del Empleado:"
+	Mostrar ""
+	Mostrar "Nombre del Empleado: " empleado2.getnombre()
+	Mostrar "Cedula del Empleado: " empleado2.getcedula()
+	Mostrar "Posicion del Empleado: " empleado2.getposicion()
+	Mostrar ""
+	Mostrar "Sueldo Base: " empleado2.getsueldobase() "§"
+	Mostrar "Total de Ventas: " empleado2.getventas() "§"
+	Mostrar "Horas Extras Trabajadas: " empleado2.gethorasextra()
+	Mostrar ""
+	Mostrar "Bono por Ventas: " empleado2.getbonoventas() "§"
+	Mostrar "Bono por Horas Extra: " empleado2.getbonoextra() "§"
+	Mostrar ""
+	Mostrar "Sueldo Neto: " empleado2.getsueldoneto() "§"
+	Mostrar ""
+	Mostrar "--------------------------------------------------------------------"
+	Mostrar ""
+
+Fin Algoritmo
